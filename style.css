@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #e1dee9;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8.5rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: #f7f6f9;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #383347;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+
+
+.heading h3{
+    font-size: 3rem;
+    color: #52389b;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1.7rem 2.8rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #f7f6f9;
+    background: linear-gradient( 135deg, #494262, #6e6592);
+
+}
+
+
+.btn:hover{
+    background: linear-gradient(135deg, #6e6592, #494262);
+}
+
+
+
+/* --------------------------------------------------- */
+
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background: #f7f6f9;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    border-radius: 0 0 2rem 2rem;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    color: #000;
+    font-family: 'Satisfy', cursive;
+    cursor: pointer;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: #383347;
+    transition: all .4s ease-out;
+}
+
+header .navbar a:hover{
+    color: #52389b;
+}
+
+header .icons{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    background: #edecf2;
+    color: #130f40;
+    border-radius: 50%;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all .4s ease-out;
+}
+
+header .icons div:hover{
+    background: #d8d5e2;
+}
+
+#menu-btn{
+    display: none;
+}
+
+@-webkit-keyframes fadeUp{
+    0%{
+        -webkit-transform: translateY(5rem);
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeUp{
+    0%{
+        -webkit-transform: translateY(5rem);
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+}
